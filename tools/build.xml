@@ -254,7 +254,7 @@
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
 			<!-- Log4J, jnlp			-->
-			<zipfileset src="lib/commons-logging.jar">
+			<zipfileset src="lib/commons-logging-1.1.1.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
 			<zipfileset src="lib/log4j.jar">
@@ -347,6 +347,10 @@
 			<zipfileset src="lib/jxl.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
+			<!-- commons-jexl-2.1.1 -->
+			<zipfileset src="lib/commons-jexl-2.1.1.jar">
+				<patternset refid="manifest.exclude" />
+			</zipfileset>
  		</jar>			
 
 
@@ -417,7 +421,7 @@
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
 			<!-- Log4J, jnlp			-->
-			<zipfileset src="lib/commons-logging.jar">
+			<zipfileset src="lib/commons-logging-1.1.1.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
 			<zipfileset src="lib/log4j.jar">
@@ -507,6 +511,10 @@
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
 			<zipfileset src="lib/jxl.jar">
+				<patternset refid="manifest.exclude" />
+			</zipfileset>
+			<!-- commons-jexl-2.1.1 -->
+			<zipfileset src="lib/commons-jexl-2.1.1.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
 

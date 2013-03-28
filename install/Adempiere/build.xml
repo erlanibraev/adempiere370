@@ -141,6 +141,10 @@
 			<zipfileset src="lib/customization.jar" >
 				<patternset refid="manifest.exclude"/>
 			</zipfileset>
+			<!-- pack patches.jar and customization_zerde2.jar into Adempiere.jar -->
+			<zipfileset src="lib/customization_zerde2.jar" >
+				<patternset refid="manifest.exclude"/>
+			</zipfileset>
 			<!-- 2pack packages -->
 			<zipfileset src="lib/packages.jar" >
 				<patternset refid="manifest.exclude"/>
@@ -189,10 +193,17 @@
 			storepass="${ADEMPIERE_KEYSTOREPASS}" keystore="${ADEMPIERE_KEYSTORE}" />
 		<copy file="lib/customization1.jar" tofile="lib/customization.jar" overwrite="yes" />
 
+		<!-- Sign customization Jar -->
+		<copy file="lib/customization_zerde2.jar" tofile="lib/customization1_zerde2.jar" overwrite="yes" />
+		<signjar jar="lib/customization1_zerde2.jar" alias="${ADEMPIERE_KEYSTORECODEALIAS}"
+			storepass="${ADEMPIERE_KEYSTOREPASS}" keystore="${ADEMPIERE_KEYSTORE}" />
+		<copy file="lib/customization1_zerde2.jar" tofile="lib/customization_zerde2.jar" overwrite="yes" />
+
 		<!-- clean up -->
 		<delete  file="lib/Adempiere1.jar"/>
 		<delete  file="lib/patches1.jar"/>
 		<delete  file="lib/customization1.jar"/>
+		<delete  file="lib/customization1_zerde2.jar"/>
 	</target>
 
 	<!-- rebuild Adempiere.jar and webui.war to include possible customization and patches -->
@@ -207,6 +218,10 @@
 		<zip destfile="lib/webui1.war" duplicate="preserve">
 			<!-- pack zkpatches.jar and zkcustomization.jar into webui.war -->
 			<zipfileset src="lib/zkcustomization.jar" >
+				<patternset refid="manifest.exclude"/>
+			</zipfileset>
+			<!-- pack zkpatches.jar and zkcustomization_zerde2.jar into webui.war -->
+			<zipfileset src="lib/zkcustomization_zerde2.jar" >
 				<patternset refid="manifest.exclude"/>
 			</zipfileset>
 			<!-- 2pack zkpackages -->
@@ -363,7 +378,7 @@
 			<zipfileset dir="utils" prefix="Adempiere"
 				includes="WinEnv.js" />
 			<zipfileset dir="lib" prefix="Adempiere/lib"
-				includes="Adempiere.exe,*.ico,customization.jar,patches.jar,CompiereJasperReqs.jar,Adempiere.jar,AdempiereCLib.jar,adempiereDirect.jnlp,index.html,*.0" />
+				includes="Adempiere.exe,*.ico,customization.jar,customization_zerde2.jar,patches.jar,CompiereJasperReqs.jar,Adempiere.jar,AdempiereCLib.jar,adempiereDirect.jnlp,index.html,*.0" />
 		</zip>
 
 		<!--	Save properties		-->
@@ -384,7 +399,7 @@
 			<zipfileset dir="utils" prefix="Adempiere"
 				includes="WinEnv.js" />
 			<zipfileset dir="lib" prefix="Adempiere/lib"
-				includes="Adempiere.exe,*.ico,customization.jar,patches.jar,CompiereJasperReqs.jar,Adempiere.jar,AdempiereCLib.jar,adempiereDirect.jnlp,index.html,*.0" />
+				includes="Adempiere.exe,*.ico,customization.jar,customization_zerde2.jar,patches.jar,CompiereJasperReqs.jar,Adempiere.jar,AdempiereCLib.jar,adempiereDirect.jnlp,index.html,*.0" />
 		</zip>
 	</target>
 

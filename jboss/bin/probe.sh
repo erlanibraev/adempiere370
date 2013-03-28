@@ -8,7 +8,7 @@
 # Discovers all UDP-based members running on a certain mcast address (use -help for help)
 # Probe [-help] [-addr <addr>] [-port <port>] [-ttl <ttl>] [-timeout <timeout>]
 
-CLASSPATH=.:../lib/commons-logging.jar:../server/all/lib/jgroups.jar:$CLASSPATH
+CLASSPATH=.:../lib/commons-logging-1.1.1.jar:../server/all/lib/jgroups.jar:$CLASSPATH
 
 # OS specific support (must be 'true' or 'false').
 cygwin=false;

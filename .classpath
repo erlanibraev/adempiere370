@@ -91,7 +91,7 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry exported="true" kind="lib" path="tools/lib/commons-logging.jar">
+	<classpathentry exported="true" kind="lib" path="tools/lib/commons-logging-1.1.1.jar">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
@@ -328,5 +328,6 @@
 	<classpathentry exported="true" kind="lib" path="tools/lib/poi-scratchpad-3.8-20120326.jar"/>
 	<classpathentry exported="true" kind="lib" path="tools/lib/commons-io-2.4.jar"/>
 	<classpathentry exported="true" kind="lib" path="tools/lib/jxl.jar"/>
+	<classpathentry exported="true" kind="lib" path="tools/lib/commons-jexl-2.1.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -75,7 +75,7 @@
          jaxen-1.1-beta-4.jar,
          hibernate-annotations.jar,
          commons-httpclient.jar,
-         commons-logging.jar,
+         commons-logging-1.1.1.jar,
          commons-vfs.jar,
          hibernate3.jar,
          commons-logging-api.jar,

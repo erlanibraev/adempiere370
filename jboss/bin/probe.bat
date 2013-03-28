@@ -6,7 +6,7 @@ rem -------------------------------------------------------------------------
 REM Discovers all UDP-based members running on a certain mcast address (use -help for help)
 REM Probe [-help] [-addr <addr>] [-port <port>] [-ttl <ttl>] [-timeout <timeout>]
 
-set CLASSPATH=..\lib\commons-logging.jar;..\server\all\lib\jgroups.jar
+set CLASSPATH=..\lib\commons-logging-1.1.1.jar;..\server\all\lib\jgroups.jar
 
 set CP=%CLASSPATH%
 

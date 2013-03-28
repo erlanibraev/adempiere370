@@ -16,6 +16,7 @@
   <classPath>
     <mainClass>org.compiere.Adempiere</mainClass>
     <cp>customization.jar</cp>
+    <cp>customization_zerde2.jar</cp>
     <cp>patches.jar</cp>
     <cp>Adempiere.jar</cp>
     <cp>AdempiereCLib.jar</cp>
