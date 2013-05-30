@@ -88,6 +88,8 @@
 	    dir="${build.war.dir}"
 	    includes="**/*.*">
       </fileset>
+      <zipfileset src="${src.web.dir}/WEB-INF/lib/commons-lang-2.1.jar"/>
+
       <manifest>
 		<attribute name="Specification-Title" value="AdempiereApps"/>
 		<attribute name="Specification-Version" value="${env.ADEMPIERE_VERSION}"/>
