@@ -43,4 +43,10 @@
 			<context-root>/webui</context-root>
 		</web>
 	</module>
+	<module>
+		<web>
+			<web-uri>BudgetCall.war</web-uri>
+			<context-root>/budget</context-root>
+		</web>
+	</module>
 </application>
