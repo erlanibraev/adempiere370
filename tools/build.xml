@@ -18,6 +18,7 @@
 	<property name="jboss.dir" value="../jboss" />
 	<property name="glassfish.dir" value="../glassfishfacet" />
 	<property name="dist.dir" value="../lib" />
+        <property name="src.web.dir" value="../serverApps/src/web" />
 	<!--<property environment="env"/>-->
 	<import file="../utils_dev/properties.xml" />
 
@@ -517,7 +518,10 @@
 			<zipfileset src="lib/commons-jexl-2.1.1.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
-
+                        <!-- commons-lang-2.1.jar -->
+                        <zipfileset src="${src.web.dir}/WEB-INF/lib/commons-lang-2.1.jar">
+				<patternset refid="manifest.exclude" />
+                        </zipfileset>
 		</jar>
 
 	</target>
