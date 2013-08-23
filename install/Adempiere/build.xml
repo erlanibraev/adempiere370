@@ -145,6 +145,10 @@
 			<zipfileset src="lib/customization_zerde2.jar" >
 				<patternset refid="manifest.exclude"/>
 			</zipfileset>
+			<!-- pack patches.jar and tablelayout.jar into Adempiere.jar -->
+			<zipfileset src="lib/tablelayout.jar" >
+				<patternset refid="manifest.exclude"/>
+			</zipfileset>
 			<!-- 2pack packages -->
 			<zipfileset src="lib/packages.jar" >
 				<patternset refid="manifest.exclude"/>
