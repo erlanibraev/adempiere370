@@ -496,13 +496,29 @@
 			<zipfileset src="lib/c3p0-oracle-thin-extras-0.9.1.2.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
-			<!-- POI -->
-			<zipfileset src="lib/poi-3.8-20120326.jar">
+			<!-- POI Modified by E.Seidegali -->
+			<zipfileset src="lib/poi-3.9-20121203.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
-			<zipfileset src="lib/poi-scratchpad-3.8-20120326.jar">
+			<zipfileset src="lib/poi-ooxml-3.9-20121203.jar">
 				<patternset refid="manifest.exclude" />
 			</zipfileset>
+			<zipfileset src="lib/poi-ooxml-schemas-3.9-20121203.jar">
+				<patternset refid="manifest.exclude" />
+			</zipfileset>
+			<zipfileset src="lib/poi-scratchpad-3.9-20121203.jar">
+				<patternset refid="manifest.exclude" />
+			</zipfileset>
+			<zipfileset src="lib/ooxml-lib/xmlbeans-2.3.0.jar">
+				<patternset refid="manifest.exclude" />
+			</zipfileset>
+			<zipfileset src="lib/ooxml-lib/stax-api-1.0.1.jar">
+				<patternset refid="manifest.exclude" />
+			</zipfileset>
+			<zipfileset src="lib/ooxml-lib/dom4j-1.6.1.jar">
+				<patternset refid="manifest.exclude" />
+			</zipfileset>
+			<!-- /End of Add jar POI-->
 			<manifest>
 				<attribute name="Specification-Title" value="Adempiere Client Tools" />
 				<attribute name="Specification-Version" value="${env.ADEMPIERE_VERSION}" />
